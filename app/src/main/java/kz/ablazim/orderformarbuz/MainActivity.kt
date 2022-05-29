@@ -11,7 +11,7 @@ import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.textfield.TextInputLayout
 import kz.ablazim.orderformarbuz.databinding.ActivityMainBinding
 import kz.ablazim.orderformarbuz.util.FormatHelper
-import kz.ablazim.orderformarbuz.validator.DateRangeValidator
+import kz.ablazim.orderformarbuz.validator.DateValidator
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import timber.log.Timber
 import java.lang.ref.WeakReference
@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             dateButton.setOnClickListener {
-                val dateRangeValidator = DateRangeValidator(PERIOD_IN_DAYS)
+                val dateRangeValidator = DateValidator(PERIOD_IN_DAYS)
                 MaterialDatePicker.Builder.datePicker()
                     .setTheme(R.style.MaterialCalendarTheme)
                     .setTitleText(R.string.date)

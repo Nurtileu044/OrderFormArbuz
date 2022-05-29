@@ -8,7 +8,7 @@ import java.lang.ref.WeakReference
 import java.util.concurrent.TimeUnit
 
 @Parcelize
-class DateRangeValidator(private val duration: Long) : CalendarConstraints.DateValidator {
+class DateValidator(private val duration: Long) : CalendarConstraints.DateValidator {
     @IgnoredOnParcel
     var datePicker: WeakReference<MaterialDatePicker<Long?>>? = null
 
