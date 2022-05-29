@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EditTextColorStyleBlue">
+        <item name="colorControlActivated">@color/colorBlue</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorBlackTextAlpha60</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextInputLayoutAppearanceBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="theme">@style/EditTextColorStyleBlue</item>
+        <item name="hintTextColor">@color/selector_color_input_box_black</item>
+        <item name="android:textColorHint">@color/colorBlackTextAlpha60</item>
+        <item name="boxStrokeColor">@color/selector_color_input_box_black</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="suffixTextColor">@color/colorGrayTextDisabled</item>
+    </style>
+
+    <style name="TextInputLayoutAppearanceBox.ExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="theme">@style/EditTextColorStyleBlue</item>
+        <item name="hintTextColor">@color/selector_color_input_box_black</item>
+        <item name="android:textColorHint">@color/colorBlackTextAlpha60</item>
+        <item name="boxStrokeColor">@color/selector_color_input_box_black</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="endIconTint">@color/colorBlackAlpha60</item>
+    </style>
+
+    <style name="CalendarHeaderToggleButton" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="CalendarHeaderSelection" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="MaterialCalendarTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarHeaderToggleButton">@style/CalendarHeaderToggleButton</item>
+        <item name="materialCalendarHeaderSelection">@style/CalendarHeaderSelection</item>
+    </style>
+
+    <style name="Base.TextAppearance" parent="TextAppearance.AppCompat.Body1" />
+
+    <style name="Base.TextAppearance.Regular">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="textStyleRegular14" parent="Base.TextAppearance.Regular">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textStyleRegular16" parent="Base.TextAppearance.Regular">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textStyleRegular18" parent="Base.TextAppearance.Regular">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textStyleRegular22" parent="Base.TextAppearance.Regular">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="textStyleRegular24" parent="Base.TextAppearance.Regular">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>
